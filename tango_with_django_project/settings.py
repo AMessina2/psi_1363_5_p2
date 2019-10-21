@@ -134,3 +134,8 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/2.1/howto/static-files/
 
 STATIC_URL = '/static/'
+
+# Parse database configuration from $DATABASE_URL
+import dj_database_url
+DATABASES['default']= dj_database_url.config(default='postgres://alumnodb:alumnodb@localhost:5432/psi')
+STATIC_ROOT = 'staticfiles'
