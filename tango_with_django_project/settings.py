@@ -139,3 +139,5 @@ STATIC_URL = '/static/'
 import dj_database_url
 DATABASES['default']= dj_database_url.config(default='postgres://alumnodb:alumnodb@localhost:5432/psi')
 STATIC_ROOT = 'staticfiles'
+
+ALLOWED_HOSTS = [u'https://intense-citadel-07693.herokuapp.com', u'localhost', u'127.0.0.1']
