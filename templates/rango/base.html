@@ -17,7 +17,7 @@
         </div>
         <div>
             {% block sidebar_block %}
-                {% get_category_list category %}
+                {% comment %} {% get_category_list category %} {% endcomment %}
             {% endblock %}
         </div>
         <hr />
