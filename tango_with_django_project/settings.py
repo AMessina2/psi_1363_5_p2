@@ -144,3 +144,6 @@ DATABASES['default']= dj_database_url.config(default='postgres://alumnodb:alumno
 STATIC_ROOT = 'staticfiles'
 
 ALLOWED_HOSTS = ['intense-citadel-07693.herokuapp.com', 'localhost', '127.0.0.1']
+
+STATIC_URL = '/static/'
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticHeroku')
